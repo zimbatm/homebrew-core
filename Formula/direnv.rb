@@ -18,6 +18,8 @@ class Direnv < Formula
 
   depends_on "go" => :build
 
+  depends_on "bash"
+
   def install
     system "make", "install", "PREFIX=#{prefix}"
   end
